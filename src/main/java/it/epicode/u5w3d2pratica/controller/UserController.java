@@ -50,7 +50,7 @@ public class UserController {
     }
 
 
-    
+
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteUser(@PathVariable int id) throws NotFoundException {
