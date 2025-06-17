@@ -25,7 +25,6 @@ public class UserService {
         user.setNome(userDto.getNome());
         user.setCognome(userDto.getCognome());
         user.setEmail(userDto.getEmail());
-        user.setPassword(userDto.getPassword());
         user.setPassword(passwordEncoder.encode(userDto.getPassword()));
         user.setRole(Role.USER);
 
